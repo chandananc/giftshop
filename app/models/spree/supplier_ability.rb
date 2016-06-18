@@ -36,11 +36,13 @@ module Spree
         end
         can [:admin, :create, :index, :update, :read], Spree::Product
         # can [:admin, :manage], Spree::ProductProperty, product: { supplier_ids: user.supplier_id }
-        can [:admin, :manage, :stock], Spree::ProductProperty do |property|
-          property.product.supplier_ids.include?(user.supplier_id)
-        end
-        can [:admin, :index, :update, :create,:read], Spree::Property
+        #can [:admin, :manage, :stock], Spree::ProductProperty do |property|
+        #  property.product.supplier_ids.include?(user.supplier_id)
+        #end
+        #can [:admin, :index, :update, :create,:read], Spree::Property
         can [:admin, :update, :create, :index, :read], Spree::Prototype
+        can [:admin, :manage, :read], Spree::OptionType
+        
         can [:admin, :manage, :read, :ready, :ship], Spree::Shipment, order: { state: 'complete' }, stock_location: { supplier_id: user.supplier_id }
         can [:admin, :create, :update], :stock_items
         can [:admin, :manage], Spree::StockItem, stock_location_id: user.supplier.stock_locations.pluck(:id)

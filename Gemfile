@@ -48,11 +48,12 @@ end
 gem 'spree', '~> 3.0.7'
 gem 'spree_gateway', '~> 3.0.0'
 gem 'spree_auth_devise', '~> 3.0.0'
-gem 'spree_related_products', github: 'spree-contrib/spree_related_products', branch: '3-0-stable'
+#gem 'spree_related_products', github: 'spree-contrib/spree_related_products', branch: '3-0-stable'
 gem 'spree_drop_ship', :git => 'git://github.com/grmahesh/spree_drop_ship.git', branch: '3-0-stable'
 #gem 'spree_social', github: 'spree-contrib/spree_social', branch: '3-0-stable'
 gem 'spree_marketplace', github: 'firman/spree_marketplace'
-gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: '3-0-stable'
+#gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: '3-0-stable'
 #gem 'spree_blog', :git => 'git://github.com/chandananc/spree_blog.git'
+#gem 'spree_product_catalog', github: 'citrus/spree_product_catalog'
 
 
